@@ -19,7 +19,11 @@ module.exports = {
         violetBlue:'hsla(256, 72%, 46%, 1)',
         persianBlue: 'hsla(241, 72%, 46%, 0)',
 
+      },
+      boxShadow:{
+        'blue':'0 30px 60px -15px hsla(234, 85%, 45%,0.2)'
       }
+      
     },
   },
   plugins: [],
