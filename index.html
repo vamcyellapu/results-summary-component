@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/main.css" />
+    <title>Results summary component</title>
+  </head>
+  <body class="min-h-screen md:flex justify-center items-center">
+    <section
+      class="bg-white md:rounded-3xl md:shadow-2xl max-w-3xl grid md:grid-cols-2 mx-auto"
+    >
+      <article
+        class="text-center text-lightLavender bg-gradient-to-b from-lightSlateBlue via-lightRoyalBlue to-lightRoyalBlue rounded-b-3xl md:rounded-3xl flex flex-col justify-center items-center p-8 gap-6"
+      >
+        <h1 class="text-xl font-bold">Your Result</h1>
+        <div
+          class="rounded-full bg-gradient-to-b from-violetBlue to-persianBlue w-52 h-52 flex flex-col justify-center items-center relative"
+        >
+          <span class="text-7xl font-extrabold text-white">76</span>
+          <span class="font-bold opacity-50">of 100</span>
+        </div>
+        <div>
+          <span class="text-white text-2xl font-bold block mb-2">Great</span>
+          <p class="text-sm">
+            You scored higher than 65% of the people who have taken these tests.
+          </p>
+        </div>
+      </article>
+      <article class="flex flex-col gap-6 p-8">
+        <h2 class="text-xl font-bold">Summary</h2>
+        <ul class="flex flex-col gap-3 mb-3">
+          <li class="flex justify-between bg-lightRed/5 p-3 rounded-lg">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-reaction.svg" alt="" />
+              <span class="text-lightRed">Reaction</span>
+            </div>
+            <p class="text-darkGrayBlue/50 font-bold">
+              <span class="text-darkGrayBlue">80</span> / 100
+            </p>
+          </li>
+          <li class="flex justify-between bg-orangeYellow/5 p-3 rounded-lg">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-memory.svg" alt="" />
+              <span class="text-orangeYellow">Memory</span>
+            </div>
+            <p class="text-darkGrayBlue/50 font-bold">
+              <span class="text-darkGrayBlue">92</span> / 100
+            </p>
+          </li>
+          <li class="flex justify-between bg-greenTeal/5 p-3 rounded-lg">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-verbal.svg" alt="" />
+              <span class="text-greenTeal">Verbal</span>
+            </div>
+            <p class="text-darkGrayBlue/50 font-bold">
+              <span class="text-darkGrayBlue">61</span> / 100
+            </p>
+          </li>
+          <li class="flex justify-between bg-cobaltBlue/5 p-3 rounded-lg">
+            <div class="flex gap-2">
+              <img src="./assets/images/icon-visual.svg" alt="" />
+              <span class="text-cobaltBlue">Visual</span>
+            </div>
+            <p class="text-darkGrayBlue/50 font-bold">
+              <span class="text-darkGrayBlue">72</span> / 100
+            </p>
+          </li>
+        </ul>
+        <button
+          class="text-paleBlue bg-darkGrayBlue py-3 font-bold w-full rounded-full hover:bg-gradient-to-b hover:from-lightSlateBlue hover:to-lightRoyalBlue transition-colors duration-1000 ease-out"
+        >
+          Continue
+        </button>
+      </article>
+    </section>
+  </body>
+</html>
+
+<!--  Your Result 76 of 100 Great You scored higher than 65% of the people who
+    have taken these tests. Summary Reaction 80 / 100 Memory 92 / 100 Verbal 61
+    / 100 Visual 72 / 100 Continue -->
